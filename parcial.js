@@ -45,6 +45,8 @@ function juego() {
     if (intentosJ1[i] === numSecreto) {
       console.log(`Correcto!🥳🎈 Ganaste ${players[0]}`);
       break;
+    } else if (intentosJ1[i] !== numSecreto && isNaN(intentosJ1[i])) {
+      console.log('Has ingresado un valor incorrecto. Perdiste un turno');
     } else {
       console.log('❌ Incorrecto!');
     }
@@ -56,6 +58,8 @@ function juego() {
     if (intentosJ2[i] === numSecreto) {
       console.log(`Correcto!🥳🎈 Ganaste ${players[1]}`);
       break;
+    } else if (intentosJ2[i] !== numSecreto && isNaN(intentosJ2[i])) {
+      console.log('Has ingresado un valor incorrecto. Perdiste un turno');
     } else {
       console.log('❌ Incorrecto!');
     }
@@ -67,6 +71,8 @@ function juego() {
     if (intentosJ3[i] === numSecreto) {
       console.log(`Correcto! 🥳🎈 Ganaste ${players[2]}`);
       break;
+    } else if (intentosJ3[i] !== numSecreto && isNaN(intentosJ3[i])) {
+      console.log('Has ingresado un valor incorrecto. Perdiste un turno');
     } else {
       console.log('❌ Incorrecto!');
     }
@@ -78,6 +84,8 @@ function juego() {
     if (intentosJ4[i] === numSecreto) {
       console.log(`Correcto! 🥳🎈 Ganaste ${players[3]}`);
       break;
+    } else if (intentosJ4[i] !== numSecreto && isNaN(intentosJ4[i])) {
+      console.log('Has ingresado un valor incorrecto. Perdiste un turno');
     } else {
       console.log('❌ Incorrecto!');
     }
